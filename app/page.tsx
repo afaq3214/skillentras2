@@ -578,10 +578,10 @@ export default function HomePage() {
                       </CardHeader>
 
                       <div
-                        className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"}`}
+                        className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-72 opacity-100" : "max-h-0 opacity-0"}`}
                       >
                         <CardContent className="pt-0">
-                          <div className="pl-16">
+                          <div className="sm:pl-0 lg:pl-16">
                             <div className="bg-gradient-to-r from-primary/5 to-primary-light/5 rounded-xl p-4 border-l-4 border-primary">
                               <p className="text-gray-700 leading-relaxed font-medium">{faq.answer}</p>
                               <div className="flex items-center mt-3 text-sm text-primary">
