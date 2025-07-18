@@ -109,8 +109,8 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: 'Office No',
-      value: 'Whatsapp: +92 321 8580007',
-      description: 'Cell No: +1 571 2765326',
+    value: 'Cell No: +1 571 2765326',
+      description: 'Whatsapp: +92 321 8580007',
       color: 'from-green-500 to-green-600',
       delay: '200ms',
     },
@@ -367,7 +367,7 @@ export default function ContactPage() {
                           <option value="content-writing">Website Content Writing</option>
                           <option value="web-development">WordPress Development</option>
                           <option value="virtual-assistant">Virtual Assistant Services</option>
-                          <option value="custom">Custom Solution</option>
+                          <option value="custom">General Inquiry</option>
                         </select>
                       </div>
                       <div className="group">
