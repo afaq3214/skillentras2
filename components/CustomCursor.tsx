@@ -36,7 +36,7 @@ export default function CustomCursor() {
   return (
     <img
   ref={cursorRef}
-  src={isHovering ? '/cursor-hover.png' : '/cursor.png'} // Adjusted for clarity
+  src={isHovering ? '/cursor.png' : '/cursor.png'} // Adjusted for clarity
   alt="Custom Cursor"
   className="hidden sm:block" // Hide by default, show on sm and above
   style={{
