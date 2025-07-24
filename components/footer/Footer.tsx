@@ -57,10 +57,10 @@ const Footer = () => {
               <h3 className="font-bold mb-6 text-lg">Services</h3>
               <div className="space-y-3 text-sm">
                 <p className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium">
-                 <Link href='/services'>Business Consulting</Link> 
+                 <Link href='/services'>Business Consultancy</Link> 
                 </p>
                 <p className="text-gray-300 hover:text-primary-light transition-colors duration-300 cursor-pointer font-medium">
-                  <Link href='/services'>Academic Research</Link> 
+                  <Link href='/services'>Scholarly Guidance</Link> 
                 </p>
                 <p className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium">
                   <Link href='/services'>Training & Development</Link> 

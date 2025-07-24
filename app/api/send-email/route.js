@@ -1,13 +1,7 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-console.log('SMTP_HOST:', process.env.SMTP_HOST);
-console.log('SMTP_PORT:', process.env.SMTP_PORT);
-console.log('SMTP_USER:', process.env.SMTP_USER);
-console.log('SMTP_PASS:', process.env.SMTP_PASS);
-console.log('ADMIN_EMAIL:', process.env.ADMIN_EMAIL);
-console.log('FROM_EMAIL:', process.env.FROM_EMAIL);
-console.log('Node.js Version:', process.version);
+
 
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,

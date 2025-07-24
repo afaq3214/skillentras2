@@ -59,13 +59,14 @@ export default function ServicesPage() {
               },
               {
                 icon: Award,
-                title: "Academic Research & Publication Support",
-                description: "Professional academic writing and research services for scholars and professionals.",
+                title: "Scholarly Guidance & Publication Support",
+                description: "Expert support for researchers and professionals throughout their journey.",
                 features: [
-                  "Thesis, research paper writing, and editing",
-                  "Journal formatting and submission",
-                  "SPSS/SmartPLS data analysis",
-                  "100% plagiarism-free content",
+                  "Personalized suggestions and advisory for research projects",
+                  "Manuscript formatting, editing, and language enhancement",
+                  "Stuck with data analysis? We’ll help you interpret results using SPSS, SmartPLS, and more",
+                  " Need help finding the right journal? We guide you to select the best fit for your research",
+                  
                 ],
                 color: "from-purple-500 to-purple-600",
                 delay: "200ms",

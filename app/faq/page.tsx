@@ -35,7 +35,7 @@ export default function FAQPage() {
   const categories = [
     { id: "all", label: "All Questions", icon: HelpCircle, count: 12 },
     { id: "business", label: "Business Consulting", icon: Users, count: 2 },
-    { id: "academic", label: "Academic Services", icon: BookOpen, count: 2 },
+    { id: "scholar", label: "Scholarly Support", icon: BookOpen, count: 4 },
     { id: "training", label: "Training", icon: Lightbulb, count: 1 },
     { id: "content", label: "Content Writing", icon: Globe, count: 1 },
     { id: "web", label: "Web Development", icon: Zap, count: 2 },
@@ -61,19 +61,33 @@ export default function FAQPage() {
       featured: false,
     },
     {
-      id: "academic-1",
-      category: "academic",
-      question: "Is the writing plagiarism-free?",
+      id: "scholar-1",
+      category: "scholar",
+      question: "Can you help me choose a suitable journal for my research?",
       answer:
-        "Yes. 100% original content with proper citations. We use advanced plagiarism detection tools and follow strict academic integrity standards. All work is thoroughly reviewed and comes with a plagiarism report upon request.",
+        "Yes! We assist in identifying the most appropriate and reputable journals based on your field, topic, and research goals.",
       featured: true,
     },
     {
-      id: "academic-2",
-      category: "academic",
-      question: "What subjects do you support?",
+      id: "scholar-2",
+      category: "scholar",
+      question: "Do you provide data analysis services?",
       answer:
-        "Business Management, HR, Marketing, and related fields. Our team of academic experts has extensive experience in these disciplines and can handle various types of research projects, from undergraduate papers to doctoral dissertations.",
+        "We guide you through data analysis and help interpret your results using tools like SPSS, SmartPLS, and others — especially if you're stuck or need clarity.",
+      featured: false,
+    },{
+      id: "scholar-3",
+      category: "scholar",
+      question: "Can you help improve the language of my manuscript?",
+      answer:
+        "Yes, we offer language enhancement, grammar correction, and clarity improvements to help your manuscript meet publication standards.",
+      featured: false,
+    },{
+      id: "scholar-4",
+      category: "scholar",
+      question: "Who can benefit from this service?",
+      answer:
+        "Researchers, early-career professionals, doctoral candidates, and anyone preparing work for publication.",
       featured: false,
     },
     {

@@ -165,9 +165,7 @@ export default function HomePage() {
 
       <div className="animate-on-scroll opacity-0 translate-y-8" style={{ animationDelay: '600ms' }}>
         <p className="text-base sm:text-lg text-white mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-          At Skillentras, we blend expertise and innovation to help your business grow efficiently. Whether you need
-          business consulting, academic research assistance, professional training, or virtual support, we provide
-          tailored solutions designed to meet your unique goals.
+          At Skillentras, we blend expertise and innovation to help your business grow efficiently. Whether you need business consulting, professional training, digital solutions, or virtual support, we provide tailored services designed to meet your unique goals.
         </p>
       </div>
 
