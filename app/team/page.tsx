@@ -10,7 +10,7 @@ export default function TeamPage() {
   const teamMembers = [
     {
       id: 1,
-      name: "Zulfiqar Ali Qureshi",
+      name: "ZAQ",
       title: "Co-Founder | Marketing Consultant & Digital Strategist",
       description:
         "Zulfiqar brings 25+ years of experience in strategic marketing, training, and digital outreach across Asia, with a strong focus on education and healthcare. As a published author and founder of zulfiqaraliqureshi.com, he leads Skillentras' mission to deliver purpose-driven growth solutions.",
