@@ -246,7 +246,7 @@ export default function HomePage() {
                   "Personalized suggestions and advisory for research projects",
                   "Manuscript formatting, editing, and language enhancement",
                   "Stuck with data analysis? We’ll help you interpret results using SPSS, SmartPLS, and more",
-                  " Need help finding the right journal? We guide you to select the best fit for your research",
+                  " Need help finding the right journal? We’ll guide.",
                   
                 ],
                 color: "from-purple-500 to-purple-600",
@@ -280,16 +280,16 @@ export default function HomePage() {
               },
               {
                 icon: Globe,
-                title: "WordPress Website Development",
-                description: "Complete website setup with mobile-friendly, SEO-optimized design.",
-                features: [
-                  "Full setup, theme customization",
-                  "Mobile-friendly, SEO-optimized websites",
-                  "Handover and training included",
-                  "Easy self-management",
-                ],
-                color: "from-teal-500 to-teal-600",
-                delay: "800ms",
+               "title": "Web Development Services",
+    "description": "Custom web solutions to build responsive, scalable, and high-performance websites tailored to your business needs.",
+    "features": [
+      "Custom website design and development",
+      "Responsive and mobile-optimized UI/UX",
+      "Integration with CMS or e-commerce platforms",
+      "SEO optimization and performance tuning"
+    ],
+    "color": "from-blue-500 to-blue-600",
+    "delay": "800ms"
               },
               {
                 icon: CheckCircle,
@@ -343,7 +343,10 @@ export default function HomePage() {
                           key={idx}
                           className="flex items-center space-x-3 transform transition-all duration-300 hover:translate-x-2"
                         >
-                          <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color} shadow-sm`}></div>
+                          <div
+                            style={{ width: service.icon === Award ? "10px" : "8px" }}
+                            className={`h-2 rounded-full bg-gradient-to-r ${service.color} shadow-sm`}
+                          ></div>
                           <span className="text-gray-700 text-sm font-normal">{feature}</span>
                         </div>
                       ))}
