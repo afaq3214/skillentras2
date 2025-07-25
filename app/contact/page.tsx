@@ -110,7 +110,7 @@ export default function ContactPage() {
       icon: Clock,
       title: 'Office No',
     value: 'Cell No: +1 571 2765326',
-      description: 'Whatsapp: +92 321 8580007',
+      description: '',
       color: 'from-green-500 to-green-600',
       delay: '200ms',
     },
