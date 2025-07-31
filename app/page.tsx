@@ -344,10 +344,10 @@ export default function HomePage() {
                           className="flex items-center space-x-3 transform transition-all duration-300 hover:translate-x-2"
                         >
                           <div
-                            style={{ width: service.icon === Award ? "10px" : "8px" }}
-                            className={`h-2 rounded-full bg-gradient-to-r ${service.color} shadow-sm`}
+                            style={{ width: service.icon === Award ? "8px" : "8px" ,height:'8px',borderRadius:'50%'}}
+                            className={` bg-gradient-to-r ${service.color} shadow-sm`}
                           ></div>
-                          <span className="text-gray-700 text-sm font-normal">{feature}</span>
+                          <span className="text-gray-700 text-sm font-normal w-full" >{feature}</span>
                         </div>
                       ))}
                     </div>
