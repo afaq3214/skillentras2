@@ -26,7 +26,7 @@ const Footer = () => {
               <div className="space-y-2 text-gray-400 text-sm font-medium">
                 <p>📧 info@skillentras.com</p>
                 
-                <p>🕒 Office Cell No: +1 571 2765326</p>
+                <p>🕒 Office Cell No: +92 321 858 0007</p>
                 <p>🌍 Location: USA (Serving clients globally)</p>
                 <p ><Link href='https://www.linkedin.com/company/skillentras/posts/?feedView=all' className='flex items-end'><Linkedin /> &nbsp;Linkedin</Link></p>
               </div>

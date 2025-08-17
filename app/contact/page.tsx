@@ -109,7 +109,7 @@ export default function ContactPage() {
     {
       icon: Clock,
       title: 'Office No',
-    value: 'Cell No: +1 571 2765326',
+    value: 'Cell No: +92 321 858 0007',
       description: '',
       color: 'from-green-500 to-green-600',
       delay: '200ms',
