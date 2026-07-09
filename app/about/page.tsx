@@ -233,7 +233,7 @@ export default function AboutPage() {
                 asChild
                 className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
               >
-                <Link href="/team">Meet Our Team</Link>
+                <Link href="/faculty">Meet Our Team</Link>
               </Button>
             </div>
           </div>

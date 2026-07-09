@@ -145,14 +145,14 @@ export default function ContactPage() {
       title: 'Book a Discovery Call',
       description: 'Schedule a free consultation',
       color: 'from-primary to-primary-light',
-      href: '/services',
+      href: '/programs',
     },
     {
       icon: Globe,
       title: 'View Our Services',
       description: 'Explore what we offer',
       color: 'from-purple-500 to-purple-600',
-      href: '/services',
+      href: '/programs',
     },
   ];
 
@@ -560,7 +560,7 @@ export default function ContactPage() {
                 asChild
                 className="transform transition-all duration-300 hover:scale-105 font-semibold group"
               >
-                <Link href="/services" className="flex items-center space-x-2">
+                <Link href="/programs" className="flex items-center space-x-2">
                   <span>View Services</span>
                   <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>

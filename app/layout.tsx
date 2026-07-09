@@ -23,8 +23,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Skillentras - Premium Virtual Support & Expertise",
-  description: "Empowering Entrepreneurs, Coaches, and Small Businesses with Premium Virtual Support and Expertise.",
+  title: "Skillentras — Corporate Training & Organisational Development",
+  description: "Expert-led corporate training and organisational development — built on 30 years of practitioner experience. Skills That Transform.",
    icons: {
     icon: '/cursor.png', 
     

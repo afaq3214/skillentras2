@@ -21,13 +21,12 @@ const Footer = () => {
                 </Link>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed font-medium">
-                Empowering entrepreneurs, coaches, and small businesses with premium virtual support and expertise.
+                Skillentras delivers expert-led corporate training and organisational development — built on 30 years of practitioner experience and a commitment to real performance change.
               </p>
               <div className="space-y-2 text-gray-400 text-sm font-medium">
-               
-                
-                <p>🕒 Office Cell N: +92 321 858 0007</p>
-                <p>🌍 Location: USA (Serving clients globally)</p>
+                <p>📞 +92 321 8580007</p>
+                <p>✉️ qazulfi@gmail.com</p>
+                <p>🌐 www.skillentras.com</p>
                 <p ><Link href='https://www.linkedin.com/company/skillentras/posts/?feedView=all' className='flex items-end'><Linkedin /> &nbsp;Linkedin</Link></p>
               </div>
             </div>
@@ -36,10 +35,10 @@ const Footer = () => {
               <h3 className="font-bold mb-6 text-lg">Quick Links</h3>
               <div className="space-y-3">
                 {[
-                  { href: "/about", label: "About Us" },
-                  { href: "/services", label: "Services" },
-                  { href: "/team", label: "Team" },
-                  { href: "/faq", label: "FAQ" },
+                  { href: "/about", label: "About" },
+                  { href: "/faculty", label: "Faculty" },
+                  { href: "/programs", label: "Programs" },
+                  { href: "/insights", label: "Insights" },
                 ].map((link) => (
                   <Link
                     key={link.href}
@@ -54,19 +53,22 @@ const Footer = () => {
             </div>
 
             <div>
-              <h3 className="font-bold mb-6 text-lg">Services</h3>
+              <h3 className="font-bold mb-6 text-lg">Explore</h3>
               <div className="space-y-3 text-sm">
                 <p className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium">
-                 <Link href='/services'>Business Consultancy</Link> 
+                  <Link href='/programs'>Programs</Link>
                 </p>
                 <p className="text-gray-300 hover:text-primary-light transition-colors duration-300 cursor-pointer font-medium">
-                  <Link href='/services'>Scholarly Guidance</Link> 
+                  <Link href='/faculty'>Faculty</Link>
                 </p>
                 <p className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium">
-                  <Link href='/services'>Training & Development</Link> 
+                  <Link href='/corporate'>Corporate Solutions</Link>
                 </p>
                 <p className="text-gray-300 hover:text-primary-light transition-colors duration-300 cursor-pointer font-medium">
-                  <Link href='/services'> Virtual Assistant</Link>
+                  <Link href='/faq'>FAQ</Link>
+                </p>
+                <p className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer font-medium">
+                  <Link href='/contact'>Contact</Link>
                 </p>
               </div>
             </div>
@@ -74,7 +76,7 @@ const Footer = () => {
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400 text-sm font-medium">
-              © {new Date().getFullYear()} Skillentras. All rights reserved. 
+              © {new Date().getFullYear()} Skillentras. All rights reserved. | Skills That Transform
             </p>
           </div>
         </div>

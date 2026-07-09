@@ -398,7 +398,7 @@ export default function FAQPage() {
                 asChild
                 className="border-white text-white hover:bg-white hover:text-primary bg-transparent font-semibold"
               >
-                <Link href="/services">View Services</Link>
+                <Link href="/programs">View Services</Link>
               </Button>
             </div>
           </div>

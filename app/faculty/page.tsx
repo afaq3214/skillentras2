@@ -315,7 +315,7 @@ export default function TeamPage() {
                 asChild
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent transform transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-xl font-semibold group"
               >
-                <Link href="/services" className="flex items-center space-x-2">
+                <Link href="/programs" className="flex items-center space-x-2">
                   <span>View Our Services</span>
                   <Users className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
                 </Link>

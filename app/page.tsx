@@ -15,9 +15,8 @@ import {
   Award,
   Star,
   TrendingUp,
-  Zap,
   Sparkles,
-  ChevronDown, Globe, 
+  ChevronDown,
   HelpCircle
 } from "lucide-react"
 
@@ -141,16 +140,16 @@ export default function HomePage() {
       <div className="animate-on-scroll opacity-0 translate-y-8">
         <Badge className="mb-8 bg-gradient-to-r from-primary/10 to-primary-light/10 text-white hover:from-primary-light/10 hover:to-primary/10 transform transition-all duration-300 hover:scale-105 shadow-lg font-semibold">
           <Sparkles className="w-4 h-4 mr-2" />
-          Premium Virtual Support & Expertise
+          Corporate Training & Organisational Development
         </Badge>
       </div>
 
       <div className="animate-on-scroll opacity-0 translate-y-8" style={{ animationDelay: '200ms' }}>
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-          Welcome to{' '}
+          Skills That{' '}
           <span className="relative">
             <span className="bg-gradient-to-r from-primary via-primary-light to-primary bg-clip-text text-transparent animate-gradient-x">
-              Skillentras
+              Transform
             </span>
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary-light rounded-lg blur opacity-20 animate-pulse"></div>
           </span>
@@ -159,13 +158,13 @@ export default function HomePage() {
 
       <div className="animate-on-scroll opacity-0 translate-y-8" style={{ animationDelay: '400ms' }}>
         <p className="text-lg sm:text-xl lg:text-2xl text-white mb-8 leading-relaxed max-w-4xl mx-auto font-medium">
-          Empowering Entrepreneurs, Coaches, and Small Businesses with Premium Virtual Support and Expertise.
+          Expert-led corporate training and organisational development — designed to change how professionals lead, sell, manage, and perform.
         </p>
       </div>
 
       <div className="animate-on-scroll opacity-0 translate-y-8" style={{ animationDelay: '600ms' }}>
         <p className="text-base sm:text-lg text-white mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-          At Skillentras, we blend expertise and innovation to help your business grow efficiently. Whether you need business consulting, professional training, digital solutions, or virtual support, we provide tailored services designed to meet your unique goals.
+          Founded by Zulfiqar Ali Qureshi — Executive Educator, Author, and Management Consultant with over 30 years of leadership experience — Skillentras delivers programmes that go beyond information transfer. We build the kind of human capability that organisations actually need to grow.
         </p>
       </div>
 
@@ -178,8 +177,8 @@ export default function HomePage() {
           asChild
           className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white border-0 shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105 relative overflow-hidden group px-8 py-4 text-lg font-semibold"
         >
-          <Link href="/contact" className="relative z-10 flex items-center space-x-2">
-            <span>Get Started Today</span>
+          <Link href="/programs" className="relative z-10 flex items-center space-x-2">
+            <span>Explore Programs</span>
             <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </Button>
@@ -189,8 +188,8 @@ export default function HomePage() {
           asChild
           className="border-2 border-primary text-primary hover:bg-primary hover:text-white bg-white/80 backdrop-blur-sm transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl px-8 py-4 text-lg font-semibold"
         >
-          <Link href="/services" className="flex items-center space-x-2">
-            <span>View Services</span>
+          <Link href="/contact" className="flex items-center space-x-2">
+            <span>Corporate Solutions</span>
             <ChevronDown className="ml-2 h-5 w-5 animate-bounce" />
           </Link>
         </Button>
@@ -212,13 +211,13 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-20 animate-on-scroll opacity-0 translate-y-8">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our Services at a{" "}
+              Our Signature{" "}
               <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                Glance
+                Programmes
               </span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
-              Comprehensive solutions tailored to your business needs with cutting-edge expertise
+              Transformational learning designed for professionals and organisations serious about measurable performance
             </p>
           </div>
 
@@ -226,80 +225,79 @@ export default function HomePage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {[
               {
-                icon: Target,
-                title: "Business Consultancy & Coaching",
-                description: "Strategic guidance to accelerate your business growth and leadership development.",
+                icon: Award,
+                title: "Certified Training Professional (CTP)",
+                description: "Pakistan's original 12-week L&D certification — developed, authored, and delivered by our founder.",
                 features: [
-                  "Business plan & proposal development",
-                  "Pitch decks and startup advisory",
-                  "Leadership & communication coaching",
-                  "Marketing and HR consulting",
+                  "Instructional design and facilitation",
+                  "Adult learning methodologies",
+                  "Training needs analysis",
+                  "CTP book included",
                 ],
                 color: "from-blue-500 to-blue-600",
                 delay: "0ms",
               },
               {
-                icon: Award,
-                title: "Scholarly Guidance & Publication Support",
-                description: "Expert support for researchers and professionals throughout their journey.",
+                icon: Users,
+                title: "Leadership & Management Development",
+                description: "Building confident, capable, and accountable leaders at every level.",
                 features: [
-                  "Personalized suggestions and advisory for research projects",
-                  "Manuscript formatting, editing, and language enhancement",
-                  "Stuck with data analysis? We’ll help you interpret results using SPSS, SmartPLS, and more",
-                  " Need help finding the right journal? We’ll guide.",
-                  
+                  "CMEP",
+                  "Diploma in Management & Leadership",
+                  "Team development",
+                  "Performance management through coaching",
                 ],
                 color: "from-purple-500 to-purple-600",
                 delay: "200ms",
               },
               {
-                icon: Users,
-                title: "Training & Development",
-                description: "Customized training programs to enhance your team's skills and performance.",
+                icon: TrendingUp,
+                title: "Transformational Sales Leadership",
+                description: "Developing sales leaders who inspire teams and deliver sustainable growth.",
                 features: [
-                  "Certified sales, leadership, and EI workshops",
-                  "Team building and pharma-specific training",
-                  "Industry-tailored modules",
-                  "Interactive and engaging sessions",
+                  "Integrated sales leadership",
+                  "Pharmaceutical business management",
+                  "Customer-centric selling",
+                  "Sales coaching",
                 ],
                 color: "from-green-500 to-green-600",
                 delay: "400ms",
               },
               {
-                icon: Lightbulb,
-                title: "Website Content Writing",
-                description: "Professional content creation to establish your brand's online presence.",
+                icon: Target,
+                title: "Human Capital & Performance",
+                description: "Strengthening the talent systems that attract, develop, and retain your best people.",
                 features: [
-                  "SEO copywriting for 4-page starter sites",
-                  "Brand messaging, mission/vision",
-                  "Content editing and optimization",
-                  "SEO add-on available (+$20/page)",
+                  "Diploma in Human Capital & Talent Management",
+                  "HR consulting",
+                  "L&D strategy",
+                  "Coaching and mentoring",
                 ],
                 color: "from-orange-500 to-orange-600",
                 delay: "600ms",
               },
               {
-                icon: Globe,
-               "title": "Web Development Services",
-    "description": "Custom web solutions to build responsive, scalable, and high-performance websites tailored to your business needs.",
-    "features": [
-      "Custom website design and development",
-      "Responsive and mobile-optimized UI/UX",
-      "Integration with CMS or e-commerce platforms",
-      "SEO optimization and performance tuning"
-    ],
-    "color": "from-blue-500 to-blue-600",
-    "delay": "800ms"
+                icon: Star,
+                title: "Sales & Business Excellence",
+                description: "Building commercial skills that drive revenue, customer relationships, and growth.",
+                features: [
+                  "The Art of Sales and Marketing",
+                  "Communication & Presentation Skills",
+                  "Buying Motives",
+                  "Negotiation",
+                ],
+                color: "from-blue-500 to-blue-600",
+                delay: "800ms",
               },
               {
-                icon: CheckCircle,
-                title: "Virtual Assistant Services",
-                description: "Flexible administrative support with monthly plans from 10 to 50 hours.",
+                icon: Lightbulb,
+                title: "Organisational Development & Consulting",
+                description: "Strategic L&D consulting that aligns training with real business outcomes.",
                 features: [
-                  "Email, calendar, CRM management",
-                  "SOPs, research, admin support",
-                  "Monthly plans (10 to 50 hours)",
-                  "Urgent support available (+30% rush fee)",
+                  "Training needs analysis",
+                  "L&D strategy",
+                  "In-house programme design",
+                  "Performance consulting",
                 ],
                 color: "from-pink-500 to-pink-600",
                 delay: "1000ms",
@@ -356,7 +354,7 @@ export default function HomePage() {
                       variant="ghost"
                       className={`text-transparent bg-gradient-to-r ${service.color} bg-clip-text hover:bg-primary/5 p-0 h-auto font-semibold group/btn transition-all duration-300`}
                     >
-                      <Link href='/services'>
+                      <Link href='/programs'>
                       Learn More
                       </Link>
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
@@ -375,12 +373,15 @@ export default function HomePage() {
           <div className="text-center max-w-5xl mx-auto animate-on-scroll opacity-0 translate-y-8">
             <div className="relative">
               <div className="absolute -top-8 -left-8 text-6xl text-primary/20 font-serif">"</div>
-              <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 italic mb-12 leading-relaxed relative z-10">
-                We open the door to expert skills and tailored solutions that empower your business to{" "}
+              <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-900 italic mb-6 leading-relaxed relative z-10">
+                Learning should not only inform people — it should{" "}
                 <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                  grow, innovate, and succeed.
+                  transform performance.
                 </span>
               </blockquote>
+              <p className="text-lg font-semibold text-gray-700 mb-12 relative z-10">
+                — Zulfiqar Ali Qureshi, Founder, Skillentras
+              </p>
               <div className="absolute -bottom-8 -right-8 text-6xl text-primary-light/20 font-serif">"</div>
             </div>
 
@@ -407,10 +408,10 @@ export default function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { number: "500+", label: "Projects Completed", icon: TrendingUp },
-              { number: "98%", label: "Client Satisfaction", icon: Star },
-              { number: "50+", label: "Expert Team Members", icon: Users },
-              { number: "24/7", label: "Support Available", icon: Zap },
+              { number: "30+", label: "Years of Experience", icon: TrendingUp },
+              { number: "5,000+", label: "Professionals Trained", icon: Users },
+              { number: "15+", label: "Signature Programmes", icon: Star },
+              { number: "3", label: "Published Books", icon: Award },
             ].map((stat, index) => (
               <div
                 key={index}
@@ -438,29 +439,39 @@ export default function HomePage() {
           <div className="text-center max-w-4xl mx-auto">
             <div className="animate-on-scroll opacity-0 translate-y-8 mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Why Choose{" "}
+                Why{" "}
                 <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-                  Skillentras?
+                  Skillentras
                 </span>
               </h2>
             </div>
 
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { icon: Target, title: "Custom-fit Solutions", desc: "Aligned with your unique goals", delay: "0ms" },
+                {
+                  icon: Target,
+                  title: "Practitioner-Led",
+                  desc: "30 years of real-world experience across pharma, banking, FMCG, and corporate sectors — not just theory, but what actually works in practice.",
+                  delay: "0ms",
+                },
                 {
                   icon: Award,
-                  title: "Certified Experts",
-                  desc: "Consultants, trainers, writers & VAs",
+                  title: "Originator Credibility",
+                  desc: "Founder of Pakistan's original Certified Training Professional (CTP) certification — the standard against which others are measured.",
                   delay: "200ms",
                 },
                 {
                   icon: CheckCircle,
-                  title: "Transparent Pricing",
-                  desc: "Clear communication & pricing",
+                  title: "Facilitation Focus",
+                  desc: "Engagement and behaviour change — not passive lectures. Our programmes are designed to transform how people work, not just what they know.",
                   delay: "400ms",
                 },
-                { icon: Lightbulb, title: "Agile Delivery", desc: "Long-term impact focus", delay: "600ms" },
+                {
+                  icon: Lightbulb,
+                  title: "Measurable Impact",
+                  desc: "Training designed to change performance, not just inform. We build programmes that organisations can measure — in behaviour, output, and results.",
+                  delay: "600ms",
+                },
               ].map((item, index) => (
                 <div
                   key={index}
@@ -507,35 +518,35 @@ export default function HomePage() {
             <div className="grid gap-6">
               {[
                 {
-                  question: "Are business plans customized?",
+                  question: "Are your programmes available as in-house corporate training?",
                   answer:
-                    "Yes, all plans are tailored to your goals and market. We conduct thorough research on your industry, target audience, and competitive landscape to create a comprehensive business plan.",
-                  category: "Business Consulting",
+                    "Yes — all Skillentras programmes can be delivered in-house, fully customised to your organisation's context, culture, and specific development needs. Contact us to discuss your requirements and we will design a solution accordingly.",
+                  category: "Corporate Training",
                   icon: Target,
                   featured: true,
                 },
                 {
-                  question: "Is the writing plagiarism-free?",
+                  question: "Who delivers the programmes?",
                   answer:
-                    "Yes. 100% original content with proper citations. We use advanced plagiarism detection tools and follow strict academic integrity standards.",
-                  category: "Academic Services",
+                    "Programmes are delivered by Zulfiqar Ali Qureshi and a faculty of experienced practitioners — each a specialist in their domain, selected for real-world expertise, not just academic qualification.",
+                  category: "Faculty",
+                  icon: Users,
+                  featured: true,
+                },
+                {
+                  question: "What is the Certified Training Professional (CTP)?",
+                  answer:
+                    "CTP is Pakistan's original 12-week professional certification for L&D practitioners — developed, authored, and delivered by Skillentras founder Zulfiqar Ali Qureshi. It is the most comprehensive training certification in the region, with a published curriculum book and a proven track record spanning over a decade.",
+                  category: "Certification",
                   icon: Award,
                   featured: true,
                 },
                 {
-                  question: "Are sites mobile and SEO friendly?",
+                  question: "Can programmes be taken online?",
                   answer:
-                    "Absolutely, by default. All our websites are built with responsive design principles and SEO best practices with optimized loading speeds.",
-                  category: "Web Development",
-                  icon: Zap,
-                  featured: true,
-                },
-                {
-                  question: "What tasks can VAs handle?",
-                  answer:
-                    "CRM, emails, calendar, SOPs, admin support, research, data entry, social media management, customer service, and various administrative tasks.",
-                  category: "Virtual Assistant",
-                  icon: Users,
+                    "Yes — selected programmes are available as live online cohorts delivered via Zoom. Contact us at qazulfi@gmail.com or WhatsApp +92 321 8580007 for the current schedule and availability.",
+                  category: "Programmes",
+                  icon: Star,
                   featured: false,
                 },
               ].map((faq, index) => {
