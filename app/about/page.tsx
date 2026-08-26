@@ -47,7 +47,7 @@ export default function AboutPage() {
               Who We Are
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed font-medium">
-              Skillentras is a dynamic virtual service agency based in the USA, dedicated to empowering entrepreneurs, coaches, and small businesses globally. Our name blends "Skill" and "Entras" — representing the gateway to expertise and enterprise.
+              Skillentras is a dynamic virtual service agency based in Islamabad, Pakistan, dedicated to empowering entrepreneurs, coaches, and small businesses globally. Our name blends "Skill" and "Entras" — representing the gateway to expertise and enterprise.
             </p>
           </div>
         </div>

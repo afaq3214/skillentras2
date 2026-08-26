@@ -117,7 +117,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Location',
-      value: 'USA',
+      value: 'Flat# 1, 13-C, PHA, i-11/1 Islamabad Pakistan',
       description: 'Serving clients globally',
       color: 'from-purple-500 to-purple-600',
       delay: '400ms',
