@@ -29,6 +29,22 @@ const Footer = () => {
                 <p>🌐 www.skillentras.com</p>
                 <p ><Link href='https://www.linkedin.com/company/skillentras/posts/?feedView=all' className='flex items-end'><Linkedin /> &nbsp;Linkedin</Link></p>
               </div>
+
+              <a
+                href="https://thecpdregister.com/providers/cpd-group-providers--790884"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="CPD Accredited — view Skillentras on The CPD Register"
+                className="inline-block mt-6 bg-white rounded-lg p-3 transition-transform duration-300 hover:scale-105"
+              >
+                <Image
+                  src="/cpd.jpeg"
+                  alt="CPD Accredited"
+                  width={200}
+                  height={68}
+                  className="h-auto w-[200px]"
+                />
+              </a>
             </div>
 
             <div>
