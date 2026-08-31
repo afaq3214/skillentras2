@@ -86,7 +86,7 @@ const Navbar = () => {
                    { href: "/faculty", label: "Faculty" },
                    { href: "/programs", label: "Programs" },
                    { href: "/corporate", label: "Corporate" },
-                   { href: "/insights", label: "Insights" },
+                   { href: "/insights", label: "SPDC" },
                    { href: "/faq", label: "FAQ" },
                    { href: "/contact", label: "Contact" },
                  ].map((item, index) => (
@@ -152,7 +152,7 @@ const Navbar = () => {
                    { href: "/faculty", label: "Faculty" },
                    { href: "/programs", label: "Programs" },
                    { href: "/corporate", label: "Corporate" },
-                   { href: "/insights", label: "Insights" },
+                   { href: "/insights", label: "SPDC" },
                    { href: "/faq", label: "FAQ" },
                    { href: "/contact", label: "Contact" },
                  ].map((item, index) => (
