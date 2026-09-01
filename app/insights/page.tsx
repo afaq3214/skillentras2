@@ -187,9 +187,49 @@ export default function SpdcPage() {
       </div>
 
       {/* 1. Hero */}
-      <section className="py-24 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
-        <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-r from-primary/20 to-primary-light/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 left-20 w-40 h-40 bg-gradient-to-r from-primary-light/20 to-primary/20 rounded-full blur-3xl animate-float-delayed"></div>
+      <section className="py-24 lg:py-32 relative overflow-hidden isolate">
+        {/* Layered hero background */}
+        <div className="absolute inset-0 -z-10" aria-hidden="true">
+          {/* Base wash */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-primary/[0.07]"></div>
+
+          {/* Blueprint grid, faded out toward the edges */}
+          <svg
+            className="absolute inset-0 w-full h-full text-primary/20"
+            style={{
+              maskImage: "radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 75%)",
+              WebkitMaskImage: "radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 75%)",
+            }}
+          >
+            <defs>
+              <pattern id="spdc-grid" width="56" height="56" patternUnits="userSpaceOnUse">
+                <path d="M56 0H0V56" fill="none" stroke="currentColor" strokeWidth="1" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#spdc-grid)" />
+          </svg>
+
+          {/* Soft mesh glow behind the headline */}
+          <div
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] max-w-none"
+            style={{
+              background:
+                "radial-gradient(ellipse at center, rgba(57,68,188,0.13), rgba(57,68,188,0) 65%)",
+            }}
+          ></div>
+
+          {/* Depth orbs */}
+          <div className="absolute top-16 right-[12%] w-72 h-72 bg-gradient-to-br from-primary/25 to-primary-light/10 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute bottom-8 left-[8%] w-80 h-80 bg-gradient-to-tr from-primary-light/20 to-primary/10 rounded-full blur-3xl animate-float-delayed"></div>
+          <div className="absolute top-1/3 left-1/4 w-40 h-40 bg-primary/10 rounded-full blur-3xl animate-float"></div>
+
+          {/* Thin accent rings */}
+          <div className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full border border-primary/10"></div>
+          <div className="absolute -top-10 -right-10 w-[280px] h-[280px] rounded-full border border-primary/10"></div>
+
+          {/* Fade into the next section */}
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
+        </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
@@ -397,65 +437,71 @@ export default function SpdcPage() {
       </section>
 
       {/* 4. Membership Plan */}
-      <section className="py-24 bg-white">
+      <section className="py-14 lg:py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <Badge className="mb-6 bg-primary/10 text-primary border-0 font-semibold hover:bg-primary/10">
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <Badge className="mb-4 bg-primary/10 text-primary border-0 font-semibold hover:bg-primary/10">
               Membership Plan
             </Badge>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">At a glance</h2>
-            <p className="text-lg text-gray-600 font-medium">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">At a glance</h2>
+            <p className="text-base text-gray-600 font-medium">
               One simple plan. Everything you need for a full quarter of learning.
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <Card className="border-2 border-primary/20 shadow-2xl rounded-3xl overflow-hidden">
-              <div className="bg-gradient-to-r from-primary to-primary-light p-8 text-center text-white relative overflow-hidden">
+          <div className="max-w-xl mx-auto">
+            <Card className="border-2 border-primary/20 shadow-xl rounded-2xl overflow-hidden">
+              <div className="bg-gradient-to-r from-primary to-primary-light px-6 py-6 sm:px-8 text-center text-white relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary-light/20 animate-gradient-x"></div>
                 <div className="relative z-10">
-                  <p className="text-sm font-semibold uppercase tracking-widest text-white/80 mb-2">
+                  <p className="text-[11px] sm:text-xs font-semibold uppercase tracking-widest text-white/80 mb-1">
                     SPDC Professional Membership
                   </p>
-                  <p className="text-5xl lg:text-6xl font-bold mb-2">Rs. 6,000</p>
-                  <p className="text-white/90 font-medium">for a 3-month cycle</p>
+                  <p className="text-4xl sm:text-5xl font-bold tracking-tight leading-none">Rs. 6,000</p>
+                  <p className="text-sm text-white/90 font-medium mt-1.5">for a 3-month cycle</p>
                 </div>
               </div>
 
               <CardContent className="p-0">
-                <dl>
+                <div className="px-6 sm:px-8 py-3 border-b border-gray-100 bg-gray-50/60">
+                  <h3 className="text-sm font-bold text-gray-900">What&apos;s included</h3>
+                </div>
+
+                <dl className="divide-y divide-gray-100">
                   {planRows.map((row, index) => (
                     <div
                       key={row.label}
-                      className={`flex items-start gap-4 px-8 py-5 ${
-                        index !== planRows.length - 1 ? "border-b border-gray-100" : ""
+                      className={`group/row flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-6 px-6 sm:px-8 py-2.5 transition-colors duration-200 hover:bg-primary/[0.03] ${
+                        index % 2 === 1 ? "bg-gray-50/50" : ""
                       }`}
                     >
-                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                        <row.icon className="w-5 h-5 text-primary" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <dt className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+                      <dt className="flex items-center gap-3 shrink-0">
+                        <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 transition-colors duration-200 group-hover/row:bg-primary/15">
+                          <row.icon className="w-4 h-4 sm:w-[18px] sm:h-[18px] text-primary" />
+                        </span>
+                        <span className="text-[11px] sm:text-xs font-bold text-gray-500 uppercase tracking-widest">
                           {row.label}
-                        </dt>
-                        <dd className="text-gray-900 font-semibold mt-1">{row.value}</dd>
-                      </div>
+                        </span>
+                      </dt>
+                      <dd className="text-sm sm:text-base text-gray-900 font-semibold sm:text-right pl-11 sm:pl-0 leading-snug min-w-0 text-balance">
+                        {row.value}
+                      </dd>
                     </div>
                   ))}
                 </dl>
 
-                <div className="p-8 pt-6 bg-gray-50/50">
+                <div className="px-6 sm:px-8 py-5 bg-gray-50/60 border-t border-gray-100">
                   <Button
                     size="lg"
                     asChild
-                    className="w-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white border-0 shadow-xl transform transition-all duration-300 hover:scale-[1.02] py-6 text-lg font-semibold"
+                    className="w-full bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-white border-0 shadow-lg transform transition-all duration-300 hover:scale-[1.02] py-5 text-base font-semibold"
                   >
                     <a href={SPDC_LINKS.register} target="_blank" rel="noopener noreferrer">
                       Join SPDC Now
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                   </Button>
-                  <p className="text-center text-sm text-gray-500 font-medium mt-4">
+                  <p className="text-center text-xs text-gray-500 font-medium mt-3">
                     Membership becomes active from the date of payment confirmation.
                   </p>
                 </div>
