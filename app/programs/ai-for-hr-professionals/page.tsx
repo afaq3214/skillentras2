@@ -317,15 +317,30 @@ export default function AiForHrProfessionalsPage() {
                     </dd>
                   </div>
                 </dl>
-                <Button
-                  asChild
-                  className="mt-7 w-full bg-emerald-700 text-white hover:bg-emerald-800"
-                >
-                  <Link href="/contact">
-                    Continue to Registration
-                    <ArrowRight aria-hidden="true" className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                <div className="mt-7 grid gap-3">
+                  <Button
+                    asChild
+                    className="w-full border border-sky-700 bg-white text-sky-700 hover:bg-sky-50"
+                  >
+                    <Link href="/calendar">
+                      <CalendarDays aria-hidden="true" className="mr-2 h-4 w-4" />
+                      Skillentras Calendar
+                    </Link>
+                  </Button>
+                  <Button
+                    asChild
+                    className="w-full bg-emerald-700 text-white hover:bg-emerald-800"
+                  >
+                    <a
+                      href="https://forms.gle/ihBf1NovCtCuLASr9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Register Now
+                      <ArrowRight aria-hidden="true" className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
                 <p className="mt-4 text-xs leading-5 text-slate-500">
                   Contact Skillentras to confirm availability and complete your registration.
                 </p>
