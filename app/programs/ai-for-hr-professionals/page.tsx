@@ -160,7 +160,7 @@ export default function AiForHrProfessionalsPage() {
             <CardContent className="px-0 pb-0">
               <div className="relative mx-5 mb-2 aspect-[16/9] overflow-hidden rounded-xl bg-slate-100 sm:mx-8">
                 <Image
-                  src="/courseimages/ai-for-ht-professionals.png"
+                  src="/courseimages/optimized/ai-for-ht-professionals.webp"
                   alt="AI for HR Professionals programme"
                   fill
                   sizes="(max-width: 1024px) 100vw, 66vw"
