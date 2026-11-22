@@ -2,10 +2,11 @@
 
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import ProgrammeCard from "@/components/programs/ProgrammeCard"
+import { programmes } from "@/lib/programmes"
 import {
   ArrowRight,
   CheckCircle,
@@ -204,6 +205,27 @@ export default function HomePage() {
     </div>
   </div>
 </section>
+  <section id="in-person-programmes" className="relative z-10 bg-white py-16 sm:py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <Badge className="mb-5 bg-sky-100 text-sky-800 hover:bg-sky-100">
+              January – March 2027
+            </Badge>
+            <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl lg:text-5xl">
+              In-Person Training Programmes
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+              Explore our upcoming in-person programmes. Choose a course to enquire or view its brochure when available.
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {programmes.map((programme) => (
+              <ProgrammeCard key={`${programme.date}-${programme.title}`} programme={programme} />
+            ))}
+          </div>
+        </div>
+      </section>
       {/* Enhanced Services Overview */}
       <section className="py-20 bg-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white"></div>
@@ -221,9 +243,8 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* Enhanced Services Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {[
+            {[
               {
                 icon: Award,
                 title: "Certified Training Professional (CTP)",
@@ -309,15 +330,12 @@ export default function HomePage() {
                 style={{ animationDelay: service.delay }}
               >
                 <Card className="border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:scale-105 bg-white/80 backdrop-blur-sm relative overflow-hidden h-full">
-                  {/* Animated Background */}
                   <div
                     className={`absolute inset-0 ${service.color} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
                   ></div>
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
                   ></div>
-
-                  {/* Floating Elements */}
                   <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-white/20 to-white/5 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                   <CardHeader className="relative z-10 pb-4">
@@ -342,10 +360,10 @@ export default function HomePage() {
                           className="flex items-center space-x-3 transform transition-all duration-300 hover:translate-x-2"
                         >
                           <div
-                            style={{ width: service.icon === Award ? "8px" : "8px" ,height:'8px',borderRadius:'50%'}}
-                            className={` bg-gradient-to-r ${service.color} shadow-sm`}
+                            style={{ width: "8px", height: "8px", borderRadius: "50%" }}
+                            className={`bg-gradient-to-r ${service.color} shadow-sm`}
                           ></div>
-                          <span className="text-gray-700 text-sm font-normal w-full" >{feature}</span>
+                          <span className="text-gray-700 text-sm font-normal w-full">{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -354,9 +372,7 @@ export default function HomePage() {
                       variant="ghost"
                       className={`text-transparent bg-gradient-to-r ${service.color} bg-clip-text hover:bg-primary/5 p-0 h-auto font-semibold group/btn transition-all duration-300`}
                     >
-                      <Link href='/programs'>
-                      Learn More
-                      </Link>
+                      <Link href="/programs">Learn More</Link>
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
                     </Button>
                   </CardContent>
@@ -632,8 +648,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-     
-      
+
+    
     </div>
   )
 }
