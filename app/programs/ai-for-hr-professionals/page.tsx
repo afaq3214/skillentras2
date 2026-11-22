@@ -322,10 +322,14 @@ export default function AiForHrProfessionalsPage() {
                     asChild
                     className="w-full border border-sky-700 bg-white text-sky-700 hover:bg-sky-50"
                   >
-                    <Link href="/calendar">
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1kGdW6Tg6Kpu-EKNZuNxtZ2h0D4y3XWv8Z9g1xKXIDSY/edit?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <CalendarDays aria-hidden="true" className="mr-2 h-4 w-4" />
                       Skillentras Calendar
-                    </Link>
+                    </a>
                   </Button>
                   <Button
                     asChild
